@@ -20,6 +20,22 @@
         // b)对象名['自定义属性名'] = 值; ||对象名['自定义方法名'] = function(){}
 
         //删： delete 对象名.属性｜｜  delete 对象名["属性"]
+
+        //改：修改对象的属性        
+        // 对像名.属性名=值;            对象名.方法名=function(){}
+        // 对象名['属性名']=值；        对象名['方法名']=function(){}
+        // 注意：如果对象中已经有对应的属性或方法，那么表示修改
+        // 如果对象中没有对应的属性或方法，那么表示增加
+
+
+        //查：
+        // a)获取属性中的值
+        // 对象名.属性名对象名['属性名']
+
+        //b)执行方法中的代码 
+        //方法的本质就是一个函数：对象.方法名（）  ||对象['方法']（）
+
+
         let laoduan = {};
         laoduan.uname = '老段';
         laoduan['age'] = 29;
@@ -32,6 +48,7 @@
         // delete laoduan.age;
         // delete laoduan.uname;
         console.log(laoduan);
+        laoduan.dance()
     </script>
 </body>
 </html>
