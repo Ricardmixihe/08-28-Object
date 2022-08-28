@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1.定义一个数组，保存姓名
+        let ary = ['老段','老唐','老孔','老李','老张','老王','老八'];
+        //2.随机点名：随机从数组中取值
+        // a)获取数组的索引 --随机产生
+        // b)数组的索引证书 --0 - 数组.length-1
+        // let index = Math.floor(Math.random()*(ary.length-1 -0 +1)+0)
+        let index = Math.floor(Math.random()*ary.length);
+        console.log(index);
+        //3.根据当前索引取值
+        document.write(ary[index]);
+    </script>
+</body>
+</html>
