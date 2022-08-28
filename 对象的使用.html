@@ -19,9 +19,8 @@
         // a)对象名.自定义属性 = 值   ||对象名.自定义方法名  =function(){}
         // b)对象名['自定义属性名'] = 值; ||对象名['自定义方法名'] = function(){}
 
-        let laoduan = {
-
-        };
+        //删： delete 对象名.属性｜｜  delete 对象名["属性"]
+        let laoduan = {};
         laoduan.uname = '老段';
         laoduan['age'] = 29;
         laoduan.dance = function () {
@@ -30,6 +29,8 @@
         laoduan['sing'] = function () {
             console.log('老段会唱歌');
         }
+        // delete laoduan.age;
+        // delete laoduan.uname;
         console.log(laoduan);
     </script>
 </body>
