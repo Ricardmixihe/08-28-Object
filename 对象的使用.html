@@ -22,7 +22,15 @@
         let laoduan = {
 
         };
-        laoduan.name = '老段';
+        laoduan.uname = '老段';
+        laoduan['age'] = 29;
+        laoduan.dance = function () {
+            console.log('老段会跳舞');
+        }
+        laoduan['sing'] = function () {
+            console.log('老段会唱歌');
+        }
+        console.log(laoduan);
     </script>
 </body>
 </html>
